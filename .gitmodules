@@ -1,0 +1,3 @@
+[submodule "thai-lotto-api"]
+    path = thai-lotto-api
+    url = https://github.com/maxxkii98/game-lottery-project.git

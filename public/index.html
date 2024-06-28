@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทายผลหวยไทย</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card gradient-card">
+            <div class="card-body">
+                <h5 class="card-title text-white">ทายผลหวย เลขท้ายสองตัวกับเรา</h5>
+                <p class="card-text text-white">งวดวันที่ 1 ก.ย. 2565</p>
+                <form id="prediction-form">
+                    <div class="form-group d-flex justify-content-center">
+                        <input type="text" class="form-control otp-input" maxlength="1" required>
+                        <input type="text" class="form-control otp-input" maxlength="1" required>
+                    </div>
+                    <div class="form-group d-flex flex-column align-items-center">
+                        <label for="phone-number" class="form-label text-white">
+                            <i class="fas fa-phone-alt"></i> เบอร์โทรศัพท์ (ที่สมัครในเว็บ)
+                        </label>
+                        <input type="text" class="form-control" id="phone-number" placeholder="เบอร์โทรศัพท์" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">ทายผลหวย</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resultModalLabel">ผลการทายหวย</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <h5 class="card-title"><i class="fas fa-check-circle"></i> เลขที่คุณทาย</h5>
+                        <input type="text" class="form-control" id="predicted-number" disabled>
+                        <h5 class="card-title"><i class="fas fa-phone-alt"></i> หมายเลขโทรศัพท์</h5>
+                        <input type="text" class="form-control" id="phone-number-result" disabled>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close-button">ปิดหน้านี้</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
